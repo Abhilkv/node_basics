@@ -2,9 +2,16 @@ var http = require('http');
 var url = require('url');
 
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  /*Use the url module to turn the querystring into an object:*/
 
+  var error = false;
+
+  if (error) {
+    res.writeHead(404, , {'Content-Type': 'text/html'})
+  } else {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+  }
+
+  /*Use the url module to turn the querystring into an object:*/
   var q = url.parse(req.url, true).query;
   res.write((req.url));
   /*Return the year and month from the query object:*/

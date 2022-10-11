@@ -13,6 +13,7 @@ eventObj.on('customEvent', listnerOne);
 
 eventObj.addListener('customEvent-two', listnerTwo);
 
+//print listeners name
 console.log("Number of listeners listening to customEvent is : " + eventObj.listenerCount('customEvent'));
 console.log("List of listeners :" + eventObj.listeners('customEvent'))
 

@@ -15,7 +15,8 @@ http.createServer((req, res) => {
     console.log(pathName);
 
     if (pathName === '/getData') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
+        // res.writeHead(200, {'Content-Type': 'text/html'});
+        res.writeHead(200, {'Content-Type': 'application/json'});
         res.write(JSON.stringify(empData));
         // res.writeHead(200, {'Content-Type': 'application/json'});
         // res.write(empData);
