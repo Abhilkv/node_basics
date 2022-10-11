@@ -1,0 +1,3 @@
+(5) From the given the file, along with the data,
+ also display number of characters, 
+ words and lines in the file.  
